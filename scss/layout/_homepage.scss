@@ -1,0 +1,40 @@
+
+/*HOME PAGE STYLES*/
+
+#opening {
+	max-height: 100vh;
+}
+
+#opening,
+.firstpage {
+	width: 100%;
+	height: 100%;
+	/*position: relative;*/
+}
+
+#bears {
+	width:100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#lets-rolls-container {
+	@extend %centered;
+	position: absolute;
+	z-index: 999;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: calc(100vh - 50%);
+	width: 60%;
+}
+
+
+// JavaScript class
+
+.lets-roll-clicked {
+	display: none;
+
+}

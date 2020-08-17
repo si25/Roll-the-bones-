@@ -1,0 +1,104 @@
+
+@import "../base/breakpoint.scss";
+
+button,
+button:focus,
+button:active{
+	background:none;
+	outline:none;
+}
+button span{
+	position: relative;
+}
+
+
+// Home page button
+
+#lets-roll {
+	background-color: rgba(238,238,238,.5);
+	font-family: 'Indie Flower', 'Oxygen', sans-serif;
+	font-size: 2rem;
+	padding-bottom: 3px;
+	outline: inherit;
+	border: 2px solid #333;
+	border-radius: 2rem;
+	padding: 0.3rem 1rem;
+
+	@include media('>tablet', '<=desktop') {
+		font-size: 2.5rem;
+	}
+
+	@include media('>desktop') {
+		font-size: 3rem;
+	}
+
+
+}
+
+#lets-roll:hover {
+	background-color: rgba(238,238,238, 1);
+	cursor: pointer;
+}
+
+
+// Die Selectors
+
+.selector {
+	margin:0px 2rem;
+	padding: 0rem 1rem;
+	border: 2px solid #333;
+	background-color: transparent;
+	font-size: 1.5rem;
+	border-radius: .5rem;
+	background-color: rgba(238,238,238,.5);
+
+	@include media('>tablet', '<=desktop') {
+		font-size: 2rem;
+	}
+
+	@include media('>desktop') {
+		font-size: 2.5rem;
+	}
+
+}
+
+#die-selector-down:hover {
+	background-color: #ef5350;
+	cursor: pointer;
+}
+
+#die-selector-up:hover {
+	background-color: #83d97c;
+	cursor: pointer;
+}
+
+// Keep on Rollin'
+
+#roll {
+	margin:0px 2rem;
+	padding: 0.3rem 1rem;
+	background-color: transparent;
+	font-size: 1.5rem;
+	border: 2px solid #333;
+	border-radius: 2rem;
+	background-color: rgba(238,238,238,.5);
+
+	@include media('>tablet', '<=desktop') {
+		font-size: 2rem;
+	}
+
+	@include media('>desktop') {
+		font-size: 2.5rem;
+	}
+}
+
+#roll:hover {
+	background-color: rgba(238,238,238, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+

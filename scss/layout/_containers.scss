@@ -1,0 +1,42 @@
+@import "../base/breakpoint.scss";
+
+.die-selector {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-top: 1rem;
+
+    @include media('>tablet', '<=desktop') {
+		padding-top: 2rem;
+	}
+
+	@include media('>desktop') {
+		padding-top: 4rem;
+	}
+}
+
+#dice {
+	display: none;
+	display-direction: row;
+	flex-wrap: wrap;
+	// justify-content: space-around;
+	width: 50%;
+	margin: auto;
+	align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+
+.roll-container {
+	flex: 1;
+	align-items: center;
+    justify-content: center;
+}
+
+.die-selector,
+#dice,
+.roll-container {
+	display: none;
+}
